@@ -3,12 +3,11 @@ import 'package:flutter/material.dart';
 import 'home/home_screen.dart';
 
 class AppRouter {
-  static const String INTRO = "/introduction";
   static const String HOME = "/home";
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case INTRO:
+      case HOME:
         return MaterialPageRoute(builder: (_) => HomeScreen());
       default:
         return MaterialPageRoute(
