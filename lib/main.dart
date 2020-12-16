@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tigerdate/lang/localization_services.dart';
 
-import 'features/router.dart';
+import 'localization/localization_services.dart';
+import 'screens/router.dart';
 
 void main() {
   runApp(MyApp());

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:tigerdate/common/utils/gradien_color.dart';
-import 'package:tigerdate/common/utils/size_config.dart';
-import 'package:tigerdate/common/widgets/linear_gradient_mask.dart';
 import 'package:get/get.dart';
+import 'package:tigerdate/styles/colors.dart';
+import 'package:tigerdate/utils/gradien_color.dart';
+import 'package:tigerdate/utils/size_config.dart';
+import 'package:tigerdate/widgets/linear_gradient_mask.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
@@ -27,16 +28,22 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: <Widget>[
                   SizedBox(width: getProportionateScreenWidth(10)),
                   LinearGradientMask(
-                    colors: [Color(0xffDA44bb), Color(0xff8921aa)],
+                    colors: [colorSeance, colorSeance],
                     child: SvgPicture.asset(
                       "assets/svgs/tiger_date_logo.svg",
+                      width: getProportionateScreenWidth(91),
+                      height: getProportionateScreenHeight(40),
                     ),
                   ),
                   Expanded(
                     child: Align(
                       child: LinearGradientMask(
-                        colors: [Color(0xffDA44bb), Color(0xff8921aa)],
-                        child: SvgPicture.asset("assets/svgs/menu.svg"),
+                        colors: [colorSeance, colorSeance],
+                        child: SvgPicture.asset(
+                          "assets/svgs/menu.svg",
+                          width: getProportionateScreenWidth(91),
+                          height: getProportionateScreenHeight(40),
+                        ),
                       ),
                       alignment: Alignment.centerRight,
                     ),

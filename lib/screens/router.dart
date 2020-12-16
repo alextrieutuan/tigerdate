@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tigerdate/features/screens/home/home_screen.dart';
+
+import 'home/home_screen.dart';
 
 class AppRouter {
   static const String INTRO = "/introduction";

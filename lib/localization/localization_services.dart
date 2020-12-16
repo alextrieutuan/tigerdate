@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tigerdate/lang/vi_VN.dart';
 
 import 'en_US.dart';
+import 'vi_VN.dart';
 
 class LocalizationService extends Translations {
   // Default locale
