@@ -3,15 +3,16 @@ import 'package:flutter_svg/svg.dart';
 import 'package:tigerdate/common/utils/gradien_color.dart';
 import 'package:tigerdate/common/utils/size_config.dart';
 import 'package:tigerdate/common/widgets/linear_gradient_mask.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);
 
   @override
-  _IntroductionScreenState createState() => _IntroductionScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _IntroductionScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     SizedConfig().initWithContext(context);
@@ -57,7 +58,7 @@ class _IntroductionScreenState extends State<HomeScreen> {
                       child: Column(
                         children: [
                           Text(
-                            "Cuộc hẹn của\nbạn\nƯu tiên của\nchúng tôi",
+                            'home_screen_intro_1_header'.tr,
                             style: Theme.of(context)
                                 .textTheme
                                 .headline3
@@ -72,7 +73,7 @@ class _IntroductionScreenState extends State<HomeScreen> {
                           ),
                           SizedBox(height: getProportionateScreenHeight(60)),
                           Text(
-                            "Tìm kiếm đối phương nhanh hơn bao giờ hết",
+                            'home_screen_intro_1_title'.tr,
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyText1
@@ -83,7 +84,7 @@ class _IntroductionScreenState extends State<HomeScreen> {
                           ),
                           SizedBox(height: getProportionateScreenHeight(20)),
                           Text(
-                            "Với mục tiêu hướng tới những buổi gặp gỡ thật sự, Tiger date sẽ đáp ứng các mong muốn và dự định của cả 2 bên về một cuộc hẹn hò thú vị",
+                            'home_screen_intro_1_description'.tr,
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyText2

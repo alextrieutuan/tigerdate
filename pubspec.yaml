@@ -1,5 +1,5 @@
 name: tigerdate
-description: A new Flutter project.
+description: A Dating App.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -42,10 +42,8 @@ dependencies:
   # Using for displaying SVG 
   flutter_svg: any
 
-  flutter_localizations:
-    sdk: flutter
-
-  intl: ^0.16.1
+  #GetX
+  get: ^3.23.1
 
 dev_dependencies:
   flutter_test:
