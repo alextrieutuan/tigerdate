@@ -28,10 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 });
               },
             ),
-            AnimatedContainer(
-              duration: Duration(milliseconds: 5000),
-              child: _isShownSideMenu ? SideMenu() : Intro(),
-            ),
+            _isShownSideMenu ? SideMenu() : Intro(),
           ],
         ),
       ),
