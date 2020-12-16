@@ -9,7 +9,6 @@ class MainApplication extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final config = AppConfig.of(context);
-
     return GetMaterialApp(
       title: config.appName,
       debugShowCheckedModeBanner: config.debugTag,

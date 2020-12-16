@@ -1,5 +1,5 @@
 // Vietnamese Translations
-const Map<String, String> viVN = {
+const Map<String, String> vi_VN = {
   'hello': 'Xin chào!',
   'home_screen_intro_1_header': 'Cuộc hẹn của\nbạn\nƯu tiên của\nchúng tôi',
   'home_screen_intro_1_title': 'Tìm kiếm đối phương nhanh hơn bao giờ hết',

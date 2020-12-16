@@ -1,19 +1,13 @@
-import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SizedConfig {
-  static double deviceWidth;
-  static double deviceHeight;
-  static bool isResponsiveFontSizeWidth;
+  static double deviceWidth = Get.width;
+  static double deviceHeight = Get.height;
+  static bool isResponsiveFontSizeWidth =
+      (deviceWidth / deviceHeight) < (9 / 16);
 
   static final double designPhoneWidth = 375;
   static final double designPhoneHeight = 812;
-
-  void initWithContext(BuildContext context) {
-    MediaQueryData data = MediaQuery.of(context);
-    deviceWidth = data.size.width;
-    deviceHeight = data.size.height;
-    isResponsiveFontSizeWidth = (deviceWidth / deviceHeight) < (9 / 16);
-  }
 }
 
 double getProportionateScreenHeight(double value) {

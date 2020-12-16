@@ -29,8 +29,8 @@ class LocalizationService extends Translations {
   // Translations are separated maps in `lang` file
   @override
   Map<String, Map<String, String>> get keys => {
-        'en_US': enUS, // lang/en_us.dart
-        'vi_VN': viVN, // lang/vi_vn.dart
+        'en_US': en_US,
+        'vi_VN': vi_VN,
       };
 
   // Gets locale from language, and updates the locale
